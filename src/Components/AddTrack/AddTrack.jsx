@@ -74,7 +74,7 @@ const AddTrack = () => {
     trekdetails.append("itinerary_details", formData.itinerary_details);
 
     try {
-        const response1 = await fetch("http://localhost:5000/new-trek", {
+        const response1 = await fetch("https://traveluttarakhandbackend.onrender.com/api/new-trek", {
         method: "POST",
         body: trek,
         });
@@ -87,21 +87,21 @@ const AddTrack = () => {
     } catch (error) {
         console.error("Error uploading trek: ", error);
     }
-    try {
-        const response2 = await fetch("http://localhost:5000/new-trek-details", {
-        method: "POST",
-        body: trekdetails,
-        });
-        if (!response2.ok) {
-        throw new Error("Failed to upload track.");
-        }
+    // try {
+    //     const response2 = await fetch("http://localhost:5000/new-trek-details", {
+    //     method: "POST",
+    //     body: trekdetails,
+    //     });
+    //     if (!response2.ok) {
+    //     throw new Error("Failed to upload track.");
+    //     }
 
-        const result = await response2.json();
-        console.log("Trek added:", result);
-        window.location.reload();
-    } catch (error) {
-        console.error("Error uploading trek: ", error);
-    }
+    //     const result = await response2.json();
+    //     console.log("Trek added:", result);
+    //     window.location.reload();
+    // } catch (error) {
+        // console.error("Error uploading trek: ", error);
+    // }
     };
 
     return (
