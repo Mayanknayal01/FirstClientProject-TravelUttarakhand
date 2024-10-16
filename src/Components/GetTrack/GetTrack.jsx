@@ -6,7 +6,7 @@ const GetTrack = () => {
     useEffect(()=>{
         const fetchTrack = async ()=> {
             try {
-                const response = await fetch("https://traveluttarakhandbackend.onrender.com/api/treks");
+                const response = await fetch("https://traveluttarakhandbackend.onrender.com/treks");
                 if (!response.ok){
                     throw new Error("Failed to fetch treks.");
                 }
