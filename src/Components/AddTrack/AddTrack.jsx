@@ -68,7 +68,7 @@ const AddTrack = () => {
 
 
     try {
-        const response1 = await fetch("http://localhost:5000/new-trek", {
+        const response1 = await fetch("https://traveluttarakhandbackend.onrender.com/new-trek", {
         method: "POST",
         enctype: "multipart/form-data",
         body: trek,
@@ -82,6 +82,7 @@ const AddTrack = () => {
     } catch (error) {
         console.error("Error uploading trek: ", error);
     }
+
     };
 
     return (
