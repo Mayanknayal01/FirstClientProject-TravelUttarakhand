@@ -38,7 +38,7 @@ import trekbg from "./images/trekbg.jpg";
 // services images
 import trekking from "./images/trekking.jpg";
 import homestays1 from "./images/homestays1.jpg";
-import travelpackage from "./images/travelpackage.jpg";
+import camping from "./images/camping.jpg";
 // footer images
 import footer from "./images/footer.png";
 // second banner images
@@ -300,7 +300,7 @@ export const about_us_img = {
 export const services_img = {
   trekking,
   homestays1,
-  travelpackage
+  camping
 };
 
 export const footer_img = {
