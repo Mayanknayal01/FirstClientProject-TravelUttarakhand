@@ -22,8 +22,8 @@ const TrekCardsPages = () => {
                     name={item.name}
                     duration={item.duration}
                     difficulty={item.difficulty}
-                    real_price={item.realPrice}
-                    discounted_price={item.discountedPrice}
+                    real_price={item.realprice}
+                    discounted_price={item.discountedprice}
                     image={item.image}
                     difficulty_image={track_items[0].difficulty_image}
                     dur_image={track_items[0].dur_image}

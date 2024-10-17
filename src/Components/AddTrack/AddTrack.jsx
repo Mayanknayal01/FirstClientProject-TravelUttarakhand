@@ -52,30 +52,25 @@ const AddTrack = () => {
     trek.append("image", formData.image);
     trek.append("duration", formData.duration);
     trek.append("difficulty", formData.difficulty);
-    console.log("Form Data: ", trek);
+    trek.append("mainImage", formData.mainImage);
+    trek.append("altitude", formData.altitude);
+    trek.append("distance", formData.distance);
+    trek.append("transportation", formData.transportation);
+    trek.append("meals", formData.meals);
+    trek.append("season", formData.season);
+    trek.append("trek_type", formData.trek_type);
+    trek.append("banner", formData.banner);
+    trek.append("heading", formData.heading);
+    trek.append("overview", formData.overview);
+    trek.append("highlight", formData.highlight);
+    trek.append("itinerary", formData.itinerary);
+    trek.append("itinerary_details", formData.itinerary_details);
 
-    const trekdetails = new FormData();
-
-    trekdetails.append("name", formData.name);
-    trekdetails.append("mainImage", formData.mainImage);
-    trekdetails.append("duration", formData.duration);
-    trekdetails.append("difficulty", formData.difficulty);
-    trekdetails.append("altitude", formData.altitude);
-    trekdetails.append("distance", formData.distance);
-    trekdetails.append("transportation", formData.transportation);
-    trekdetails.append("meals", formData.meals);
-    trekdetails.append("season", formData.season);
-    trekdetails.append("trek_type", formData.trek_type);
-    trekdetails.append("banner", formData.banner);
-    trekdetails.append("heading", formData.heading);
-    trekdetails.append("overview", formData.overview);
-    trekdetails.append("highlight", formData.highlight);
-    trekdetails.append("itinerary", formData.itinerary);
-    trekdetails.append("itinerary_details", formData.itinerary_details);
 
     try {
         const response1 = await fetch("http://localhost:5000/new-trek", {
         method: "POST",
+        enctype: "multipart/form-data",
         body: trek,
         });
         if (!response1.ok) {
@@ -84,21 +79,6 @@ const AddTrack = () => {
 
         const result1 = await response1.json();
         console.log("Trek added:", result1);
-    } catch (error) {
-        console.error("Error uploading trek: ", error);
-    }
-    try {
-        const response2 = await fetch("http://localhost:5000/new-trek-details", {
-        method: "POST",
-        body: trekdetails,
-        });
-        if (!response2.ok) {
-        throw new Error("Failed to upload track.");
-        }
-
-        const result = await response2.json();
-        console.log("Trek added:", result);
-        window.location.reload();
     } catch (error) {
         console.error("Error uploading trek: ", error);
     }
