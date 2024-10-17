@@ -73,6 +73,31 @@ function HomePage () {
     <div className="home">
       <Header />
       <Banner />
+
+      <section className="featured-treks">
+        <h3>Upcoming Treks</h3>
+        <div className="trek-cards">
+          <Slider {...settings2}>
+            {tracks.map((item, index) => {
+              return (
+                <TrekCardComponent
+                  key={index}
+                  id={item.id}
+                  name={item.name}
+                  duration={item.duration}
+                  difficulty={item.difficulty}
+                  real_price={item.realprice}
+                  discounted_price={item.discountedprice}
+                  image={item.image}
+                  difficulty_image={track_items[0].difficulty_image}
+                  dur_image={track_items[0].dur_image}
+                />
+              );
+            })}
+          </Slider>
+        </div>
+      </section>
+
       <section className="carousel">
         <h1>Explore Destinations</h1>
         <Slider {...settings}>
@@ -174,13 +199,10 @@ function HomePage () {
             </button>
           </div>
           <div className="service-card">
-            <img src={services_img.travelpackage} alt="Travel Packages" />
-            <h4>Travel Packages</h4>
+            <img src={services_img.camping} alt="Camping" />
+            <h4>Camping</h4>
             <p>
-              Experience the best of Uttarakhand with our customized travel
-              packages, designed to suit every explorer's needs. From serene
-              hill stations to adventurous treks, we offer unforgettable
-              journeys through the state's natural wonders.
+            Experience the best of Uttarakhand with our customized camping packages, designed to suit every adventurer’s needs. From riverside camps to thrilling forest stays, we offer unforgettable experiences amidst the state’s scenic beauty and wilderness.
             </p>
             <button onClick={() => handleRedirect("./contact")}>
               Explore more
@@ -189,29 +211,6 @@ function HomePage () {
         </div>
       </section>
 
-      <section className="featured-treks">
-        <h3>Featured Treks</h3>
-        <div className="trek-cards">
-          <Slider {...settings2}>
-            {tracks.map((item, index) => {
-              return (
-                <TrekCardComponent
-                  key={index}
-                  id={item.id}
-                  name={item.name}
-                  duration={item.duration}
-                  difficulty={item.difficulty}
-                  real_price={item.realprice}
-                  discounted_price={item.discountedprice}
-                  image={item.image}
-                  difficulty_image={track_items[0].difficulty_image}
-                  dur_image={track_items[0].dur_image}
-                />
-              );
-            })}
-          </Slider>
-        </div>
-      </section>
     </div>
   );
 }

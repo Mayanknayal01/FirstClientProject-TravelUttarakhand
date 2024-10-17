@@ -72,6 +72,15 @@ function HomestaysItineraryComponent ({ id, imageOne, imageTwo, imageThree, imag
                     </div>
                 </div>
             </div>
+            <div className="homestaysOverview">
+                <h2>fs</h2>
+                <div className="homestaysOverviewfirst">
+                    <p>jkkj</p>
+                </div>
+                <div className="homestaysOverviewsecond">
+                    <img src="" alt="" />
+                </div>
+            </div>
         </div>
     );
 }
