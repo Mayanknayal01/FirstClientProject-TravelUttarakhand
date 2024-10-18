@@ -1,10 +1,14 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBed, faUtensils, faMountain } from '@fortawesome/free-solid-svg-icons';
 
 
 
-function HomestaysItineraryComponent ({ id, imageOne, imageTwo, imageThree, imageFour, imageFive, detailsOneHeading, detailsOneBed, detailsOneLocation, checkIn, checkOut, moreDetails, someMoreDetails, specificationBed, price }) {
+
+function HomestaysItineraryComponent ({ id, imageOne, imageTwo, imageThree, imageFour, imageFive, detailsOneHeading, detailsOneBed, detailsOneLocation, checkIn, checkOut, moreDetails, someMoreDetails, specificationBed, price, overview, overviewImage }) {
     return (
         <div className="homestaysItinerary">
+            {/* homestays first images section */}
             <div className="firstItineraryHomestays">
                 <div className="itsone">
                     <img src={imageOne} alt="oneImage" />
@@ -18,6 +22,7 @@ function HomestaysItineraryComponent ({ id, imageOne, imageTwo, imageThree, imag
                     <img src={imageFive} alt="FiveImage" />
                 </div>
             </div>
+            {/* homestays details section */}
             <div className="homestaysDetails">
                 <div className="detailsOne">
                     <div className="detailsOneFirst">
@@ -72,27 +77,98 @@ function HomestaysItineraryComponent ({ id, imageOne, imageTwo, imageThree, imag
                     </div>
                 </div>
             </div>
+            {/* overview section */}
             <div className="homestaysOverview">
-                <h2>fs</h2>
-                <div className="homestaysOverviewfirst">
-                    <p>jkjhkjhkkj</p>
-                </div>
-                <div className="homestaysOverviewsecond">
-                    <img src="" alt="" />
-                </div>
-                <div className="homestaysOverviewsecond">
-                    <img src="" alt="" />
-                </div>
-                <div className="homestaysOverviewsecond">
-                    <img src="" alt="" />
-                </div>
-                <div className="homestaysOverviewsecond">
-                    <img src="" alt="" />
-                </div>
-                <div className="homestaysOvervieweight">
-                    <img src="" alt="" />
+                <h2>Overview</h2>
+                <div className="homestaysoverviewOuter">
+                    <div className="homestaysOverviewfirst">
+                        <img src={overviewImage} alt="OverviewImage" />
+                    </div>
+                    <div className="homestaysOverviewsecond">
+                        <p>{overview}</p>
+                    </div>
                 </div>
             </div>
+            {/* why stay with us section */}
+            <section id="homestaysHighlights" className="homestaysSection homestaysHighlights">
+                <h2>Why Stay With Us?</h2>
+                <div className="homestaysCards">
+                    <div className="homestaysCard">
+                        <FontAwesomeIcon icon={faBed} />
+                        <h3>Luxury Rooms</h3>
+                        <p>Spacious rooms with mountain views and all modern amenities for a cozy stay.</p>
+                    </div>
+                    <div className="homestaysCard">
+                        <FontAwesomeIcon icon={faUtensils} />
+                        <h3>Authentic Cuisine</h3>
+                        <p>Enjoy homemade local delicacies made with fresh ingredients by our hosts.</p>
+                    </div>
+                    <div className="homestaysCard">
+                        <FontAwesomeIcon icon={faMountain} />
+                        <h3>Adventure Activities</h3>
+                        <p>Guided treks, nature walks, and more to satisfy the explorer in you.</p>
+                    </div>
+                </div>
+            </section>
+
+            {/* guests reviews section */}
+
+            <section id="homestaysTestimonials" class="homestaysSection homestaysTestimonials">
+                <h2>Guest Reviews</h2>
+                <div class="homestaysTestimonial">
+                    <p>"Absolutely delightful stay! The rooms were cozy, and the trek was unforgettable."</p>
+                    <p>- Anjali Sharma</p>
+                </div>
+                <div class="homestaysTestimonial">
+                    <p>"The perfect getaway! From the food to the hospitality, everything was top-notch."</p>
+                    <p>- Rohan Malhotra</p>
+                </div>
+            </section>
+
+            {/* contact us form */}
+
+            <section id="homestaysContact" className="homestaysSection">
+            <h2>Contact Us</h2>
+            <form 
+                id="homestaysBooking" 
+                className="homestaysContact-form"
+            >
+                <label htmlFor="name">Full Name:</label>
+                <input 
+                    type="text" 
+                    id="name" 
+                    name="name" 
+                    required 
+                />
+
+                <label htmlFor="email">Email:</label>
+                <input 
+                    type="email" 
+                    id="email" 
+                    name="email" 
+                    required 
+                />
+
+                <label htmlFor="date">Check-in Date:</label>
+                <input 
+                    type="date" 
+                    id="date" 
+                    name="date" 
+                    required 
+                />
+
+                <label htmlFor="message">Additional Requests:</label>
+                <textarea 
+                    id="message" 
+                    name="message" 
+                    rows="4" 
+                ></textarea>
+
+                <button type="submit">Submit Booking</button>
+            </form>
+        </section>
+
+
         </div>
     );
 }

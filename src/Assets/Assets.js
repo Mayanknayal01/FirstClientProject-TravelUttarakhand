@@ -56,11 +56,12 @@ import i_m_banner from "./images/itinerary_mid_banner.jpg";
 // highlight
 import highlight from "./images/highlight.png";
 // homestays itinerary
-import imageOne from "./images/imageOne.jpg";
+import imageOne from "./images/imagesOne.jpg";
 import imageTwo from "./images/imageTwo.jpg";
 import imageThree from "./images/imageThree.jpg";
 import imageFour from "./images/imageFour.jpg";
 import imageFive from "./images/imageFive.jpg";
+import overviewImage from "./images/homestaysOverview.jpg";
 
 export const homestaysItineraryArray = [
   {
@@ -79,7 +80,10 @@ export const homestaysItineraryArray = [
     someMoreDetails:
       "Child under the age of 12 stays free if sharing the bed with parents. Extra mattress fee applies if required.",
     specificationBed: "2 x Adult | 1 x Room",
-    price: "1500"
+    price: "1500",
+    overview:
+      "Our curated homestay experiences offer the perfect blend of comfort, hospitality, and adventure. Whether you're looking for peace in the hills or adrenaline through trekking, we have it all. Each stay promises unique local experiences and cherished memories.",
+    overviewImage: overviewImage
   }
 ];
 

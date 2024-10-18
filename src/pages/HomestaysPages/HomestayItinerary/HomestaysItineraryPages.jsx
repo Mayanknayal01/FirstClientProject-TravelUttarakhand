@@ -36,6 +36,8 @@ const HomestaysItineraryPages = () => {
                         someMoreDetails={items.someMoreDetails}
                         specificationBed={items.specificationBed}
                         price={items.price}
+                        overview={items.overview}
+                        overviewImage={items.overviewImage}
                         />
                     )
                 })};
