@@ -47,8 +47,8 @@ const AddTrack = () => {
 
     const trek = new FormData();
     trek.append("name", formData.name);
-    trek.append("realPrice", parseInt(formData.realPrice));
-    trek.append("discountedPrice", parseInt(formData.discountedPrice));
+    trek.append("realPrice", parseFloat(formData.realPrice).toFixed(2));
+    trek.append("discountedPrice", parseFloat(formData.discountedPrice).toFixed(2));    
     trek.append("image", formData.image);
     trek.append("duration", formData.duration);
     trek.append("difficulty", formData.difficulty);
