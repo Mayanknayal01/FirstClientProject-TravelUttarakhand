@@ -120,3 +120,123 @@
     transform: scale(1.1);
 }
 
+/* overview section */
+.homestaysOverview {
+    width: 80%;
+    margin: 6rem auto;
+    height: 20rem;
+}
+.homestaysOverview h2 {
+    text-align: center;
+    font-weight: 800;
+}
+
+.homestaysoverviewOuter {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 30px;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.homestaysOverviewfirst img{
+    width: 100%;
+    border-radius: 5px;
+}
+.homestaysOverviewsecond {
+    padding: 4rem;
+}
+
+
+/* why choose us section */
+
+.homestaysSection {
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+}
+
+/* Cards Section */
+.homestaysCards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.homestaysCard {
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex: 1;
+    min-width: 200px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.homestaysCard:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.homestaysCard svg {
+    font-size: 2.5rem;
+    color: #ff6600;
+    margin-bottom: 10px;
+}
+
+/* Testimonials */
+.homestaysTestimonials .homestaysTestimonial {
+    background-color: white;
+    padding: 20px;
+    margin-top: 15px;
+    border-radius: 12px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    font-style: italic;
+}
+
+.homestaysTestimonials p {
+    margin-bottom: 5px;
+}
+
+/* Contact Form */
+.homestaysContact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    max-width: 600px;
+    margin: auto;
+}
+
+.homestaysContact-form input,
+.homestaysContact-form textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.homestaysContact-form input:focus,
+.homestaysContact-form textarea:focus {
+    border-color: #ff6600;
+}
+
+.homestaysContact-form button {
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.homestaysContact-form button:hover {
+    background-color: #e55d00;
+}
