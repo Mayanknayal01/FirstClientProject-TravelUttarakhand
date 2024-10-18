@@ -12,11 +12,11 @@ import {
   track_items,
   about_us_img,
   services_img,
-  dist_slider
+  dist_slider,
 } from "../../Assets/Assets.js";
 import GetTrack from "../../Components/GetTrack/GetTrack.jsx";
 
-function HomePage () {
+function HomePage() {
   const navigate = useNavigate();
   const handleRedirect = (path) => {
     navigate(path);
@@ -32,7 +32,7 @@ function HomePage () {
     enterMode: true, // Centers the active slide
     centerPadding: "30px",
     autoplay: true,
-    autoplaySpeed: 2000
+    autoplaySpeed: 2000,
   };
   const settings = {
     dots: true,
@@ -41,7 +41,7 @@ function HomePage () {
     slidesToShow: 6, // Show 6 images at a time
     slidesToScroll: 3,
     autoplay: true,
-    autoplaySpeed: 2000
+    autoplaySpeed: 2000,
     // responsive: [
     //     {
     //         breakpoint: 1024,
@@ -118,7 +118,7 @@ function HomePage () {
         className="intro"
         style={{
           position: "relative",
-          zIndex: 0
+          zIndex: 0,
         }}
       >
         <div
@@ -133,7 +133,7 @@ function HomePage () {
             left: 0,
             right: 0,
             bottom: 0,
-            zIndex: -1 // Send the background behind content
+            zIndex: -1, // Send the background behind content
           }}
         ></div>
         <h2>
@@ -202,7 +202,10 @@ function HomePage () {
             <img src={services_img.camping} alt="Camping" />
             <h4>Camping</h4>
             <p>
-            Experience the best of Uttarakhand with our customized camping packages, designed to suit every adventurer’s needs. From riverside camps to thrilling forest stays, we offer unforgettable experiences amidst the state’s scenic beauty and wilderness.
+              Experience the best of Uttarakhand with our customized camping
+              packages, designed to suit every adventurer’s needs. From
+              riverside camps to thrilling forest stays, we offer unforgettable
+              experiences amidst the state’s scenic beauty and wilderness.
             </p>
             <button onClick={() => handleRedirect("./contact")}>
               Explore more
@@ -210,7 +213,6 @@ function HomePage () {
           </div>
         </div>
       </section>
-
     </div>
   );
 }

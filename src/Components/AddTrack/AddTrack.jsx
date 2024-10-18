@@ -70,7 +70,6 @@ const AddTrack = () => {
     try {
         const response1 = await fetch("https://traveluttarakhandbackend.onrender.com/new-trek", {
         method: "POST",
-        enctype: "multipart/form-data",
         body: trek,
         });
         if (!response1.ok) {
