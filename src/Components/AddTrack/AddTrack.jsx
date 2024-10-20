@@ -260,7 +260,7 @@ const AddTrack = () => {
                     </form>
                 </div>
 
-                {/* homesyayd entry */}
+                {/* homestays entry */}
 
                 <div className="addtracktwo">
                     <form className="addtrack-container">

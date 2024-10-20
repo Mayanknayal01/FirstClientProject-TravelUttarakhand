@@ -18,8 +18,6 @@ const TreksItineraryPages = () => {
 
                 const data = await response.json();
                 setTrekDetails(data);
-                console.log(trekDetails.banner);
-                console.log(trekDetails.mainImage)
             } catch (error) {
                 console.error('Error fetching trek details:', error);
             }
