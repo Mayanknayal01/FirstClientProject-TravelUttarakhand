@@ -272,46 +272,158 @@ const AddTrack = () => {
                 <h2>"Add Homestays"</h2>
                 </div>
                 <div className="addtrack-details">
-                <label htmlFor="homestayname">Trek Name: </label>
-                <input
-                    type="text"
-                    placeholder="Track Name"
-                    id="homestayname"
-                    required
-                />
-                <label htmlFor="homestayduration">Duration: </label>
-                <input
-                    type="text"
-                    placeholder="Duration"
-                    id="homestayduration"
-                    required
-                />
-                <label htmlFor="homestaydifficulty">Difficulty: </label>
-                <input
-                    type="text"
-                    placeholder="Difficulty"
-                    id="homestaydifficulty"
-                />
-                <label htmlFor="homestayrealPrice">Real Price: </label>
-                <input
-                    type="number"
-                    placeholder="Real Price"
-                    id="homestayrealPrice"
-                    required
-                />
-                <label htmlFor="homestayfinalPrice">Discounted Price:</label>
-                <input
-                    type="number"
-                    placeholder="Discounted Price"
-                    id="homestayfinalPrice"
-                    required
-                />
-                <label htmlFor="homestayimage">Image: </label>
+                <label htmlFor="bannerImage1">Banner Image 1: </label>
                 <input
                     type="file"
                     accept="image/*"
-                    placeholder="Image"
-                    id="homestayimage"
+                    placeholder="Banner Image 1"
+                    name="bannerImage1"
+                    onChange={handleFileChange}
+                    id="bannerImage1"
+                    required
+                />
+                <label htmlFor="bannerImage2">Banner Image 2: </label>
+                <input
+                    type="file"
+                    accept="image/*"
+                    placeholder="Banner Image 2"
+                    name="bannerImage2"
+                    onChange={handleFileChange}
+                    id="bannerImage2"
+                    required
+                />
+                <label htmlFor="bannerImage3">Banner Image 3: </label>
+                <input
+                    type="file"
+                    accept="image/*"
+                    placeholder="Banner Image 3"
+                    name="bannerImage3"
+                    onChange={handleFileChange}
+                    id="bannerImage3"
+                    required
+                />
+                <label htmlFor="bannerImage4">Banner Image 4: </label>
+                <input
+                    type="file"
+                    accept="image/*"
+                    placeholder="Banner Image 4"
+                    name="bannerImage4"
+                    onChange={handleFileChange}
+                    id="bannerImage4"
+                    required
+                />
+                <label htmlFor="bannerImage5">Banner Image 5: </label>
+                <input
+                    type="file"
+                    accept="image/*"
+                    placeholder="Banner Image 5"
+                    name="bannerImage5"
+                    onChange={handleFileChange}
+                    id="imagesImage5"
+                    required
+                />
+                <label htmlFor="homestayname">Homestays Name: </label>
+                <input
+                    type="text"
+                    placeholder="Homestays Name"
+                    id="homestayname"
+                    onChange={handleChange}
+                    required
+                />
+                <label htmlFor="homestaybeddetails">Bed Details: </label>
+                <input
+                    type="text"
+                    placeholder="Bed Details"
+                    id="homestaybeddetails"
+                    onChange={handleChange}
+                    required
+                />
+                <label htmlFor="homestaylocation">Location: </label>
+                <input
+                    type="text"
+                    placeholder="Location"
+                    id="homestaylocation"
+                    onChange={handleChange}
+                />
+                <label htmlFor="homestayCheckIn">Check In: </label>
+                <input
+                    type="number"
+                    placeholder="Check In"
+                    id="homestayCheckIn"
+                    onChange={handleChange}
+                    required
+                />
+                <label htmlFor="homestayCheckOut">Check Out: </label>
+                <input
+                    type="number"
+                    placeholder="Check Out"
+                    id="homestayCheckOut"
+                    onChange={handleChange}
+                    required
+                />
+                <label htmlFor="homestayMoreInfo">More Info:</label>
+                <input
+                    type="text"
+                    placeholder="More Info"
+                    id="homestayMoreInfo"
+                    onChange={handleChange}
+                    required
+                />
+                <label htmlFor="homestaySomeMoreInfo">Some More Info: </label>
+                <input
+                    type="text"
+                    placeholder="Some More Info"
+                    id="homestaySomeMoreInfo"
+                    onChange={handleChange}
+                    required
+                />
+                <label htmlFor="homestaySpecifications">Specifications: </label>
+                <input
+                    type="text"
+                    placeholder="Specifications"
+                    id="homestaySpecifications"
+                    onChange={handleChange}
+                    required
+                />
+                <label htmlFor="homestayPrice">Price: </label>
+                <input
+                    type="number"
+                    placeholder="Price"
+                    id="homestayPrice"
+                    onChange={handleChange}
+                    required
+                />
+                <label htmlFor="homestayOverview">Overview: </label>
+                <input
+                    type="text"
+                    placeholder="Overview"
+                    id="homestayOverview"
+                    onChange={handleChange}
+                    required
+                />
+                <label htmlFor="homestayOverviewImage">Overview Image: </label>
+                <input
+                    type="file"
+                    accept="image/*"
+                    placeholder="Overview Image"
+                    id="homestayOverviewImage"
+                    onChange={handleFileChange}
+                    required
+                />
+                <label htmlFor="homestayReview1">Review1: </label>
+                <input
+                    type="text"
+                    placeholder="Review1"
+                    id="homestayReview1"
+                    onChange={handleChange}
+                    required
+                />
+                <label htmlFor="homestayReview2">Overview: </label>
+                <input
+                    type="text"
+                    placeholder="Review2"
+                    id="homestayReview2"
+                    onChange={handleChange}
                     required
                 />
                 </div>

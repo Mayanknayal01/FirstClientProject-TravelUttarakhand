@@ -38,6 +38,8 @@ const HomestaysItineraryPages = () => {
                         price={items.price}
                         overview={items.overview}
                         overviewImage={items.overviewImage}
+                        firstReview={items.firstReview}
+                        secondReview={items.secondReview}
                         />
                     )
                 })};
