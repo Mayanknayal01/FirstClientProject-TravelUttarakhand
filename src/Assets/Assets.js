@@ -83,7 +83,9 @@ export const homestaysItineraryArray = [
     price: "1500",
     overview:
       "Our curated homestay experiences offer the perfect blend of comfort, hospitality, and adventure. Whether you're looking for peace in the hills or adrenaline through trekking, we have it all. Each stay promises unique local experiences and cherished memories.",
-    overviewImage: overviewImage
+    overviewImage: overviewImage,
+    firstReview: "Absolutely delightful stay! The rooms were cozy, and the trek was unforgettable.",
+    secondReview: "The perfect getaway! From the food to the hospitality, everything was top-notch.",
   }
 ];
 

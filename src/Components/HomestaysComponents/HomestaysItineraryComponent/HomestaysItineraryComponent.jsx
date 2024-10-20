@@ -5,7 +5,7 @@ import { faBed, faUtensils, faMountain } from '@fortawesome/free-solid-svg-icons
 
 
 
-function HomestaysItineraryComponent ({ id, imageOne, imageTwo, imageThree, imageFour, imageFive, detailsOneHeading, detailsOneBed, detailsOneLocation, checkIn, checkOut, moreDetails, someMoreDetails, specificationBed, price, overview, overviewImage }) {
+function HomestaysItineraryComponent ({ id, imageOne, imageTwo, imageThree, imageFour, imageFive, detailsOneHeading, detailsOneBed, detailsOneLocation, checkIn, checkOut, moreDetails, someMoreDetails, specificationBed, price, overview, overviewImage, firstReview, secondReview }) {
     return (
         <div className="homestaysItinerary">
             {/* homestays first images section */}
@@ -116,12 +116,12 @@ function HomestaysItineraryComponent ({ id, imageOne, imageTwo, imageThree, imag
             <section id="homestaysTestimonials" class="homestaysSection homestaysTestimonials">
                 <h2>Guest Reviews</h2>
                 <div class="homestaysTestimonial">
-                    <p>"Absolutely delightful stay! The rooms were cozy, and the trek was unforgettable."</p>
-                    <p>- Anjali Sharma</p>
+                    <p>{firstReview}</p>
+                    <p>- Anonymous</p>
                 </div>
                 <div class="homestaysTestimonial">
-                    <p>"The perfect getaway! From the food to the hospitality, everything was top-notch."</p>
-                    <p>- Rohan Malhotra</p>
+                    <p>{secondReview}</p>
+                    <p>- Anonymous</p>
                 </div>
             </section>
 
