@@ -9,6 +9,7 @@ import Treks from "./pages/TreksPages/TrekCards/TrekCardsPages.jsx";
 import Homestays from "./pages/HomestaysPages/HomestayCards/HomestaysCardsPages.jsx";
 import TrekItinerary from "./pages/TreksPages/TrekItinerary/TreksItineraryPages.jsx";
 import HomestaysItinerary from "./pages/HomestaysPages/HomestayItinerary/HomestaysItineraryPages.jsx";
+import Contact from "./pages/Contact/ContactPage.jsx";
 
 function App() {
 
@@ -22,6 +23,7 @@ function App() {
         <Route path="/homestays" element={<Homestays />} />
         <Route path="/treks/itinerary/:id" element={<TrekItinerary />} />
         <Route path="/homestays/itinerary" element= {<HomestaysItinerary />} />
+        <Route path="/contact" element= {<Contact />} />
       </Routes>
       <Footer />
     </>
