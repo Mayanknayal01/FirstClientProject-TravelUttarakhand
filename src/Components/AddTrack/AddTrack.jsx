@@ -68,7 +68,7 @@ const AddTrack = () => {
         trek.append("itinerary_details", formData.itinerary_details);
 
         try {
-            const response = await fetch("https://traveluttarakhandbackend.onrender.com/new-trek", {
+            const response = await fetch("http://localhost:5000/new-trek", {
                 method: "POST",
                 body: trek,
             });
